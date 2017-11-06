@@ -1,0 +1,27 @@
+{
+  "name": "o_t",
+  "version": "1.0.0",
+  "description": "simple dom creation and manipulation tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tumerorkun/o_t.git"
+  },
+  "keywords": [
+    "dom",
+    "o_t",
+    "createElement",
+    "append",
+    "put",
+    "select"
+  ],
+  "author": "Orkun Tumer <tumerorkun@outlook.com> (https://www.tumerorkun.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tumerorkun/o_t/issues"
+  },
+  "homepage": "https://github.com/tumerorkun/o_t#readme"
+}
