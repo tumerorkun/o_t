@@ -1,6 +1,6 @@
 {
   "name": "o_t",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "simple dom creation and manipulation tool",
   "main": "index.js",
   "scripts": {
