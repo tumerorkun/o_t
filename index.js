@@ -19,7 +19,21 @@ var o = {
     },
     Commands:function(){
         this.attr = function(a,b){
-            this.t.setAttribute(a,b);
+            if (typeof a !== 'object') {
+                this.t.setAttribute(a,b);
+            }
+            else {
+                for (var i = 0,l=Object.keys(a).length;i<l;i+=1) {
+                    var value = a[Object.keys(a)[i]];
+                    if (typeof a[Object.keys(a)[i]] === 'object') {
+                        value = '';g = a[Object.keys(a)[i]];
+                        for (var x = 0,xl=Object.keys(g).length;x<xl;x+=1) {
+                            value += Object.keys(g)[x] + ':' + g[Object.keys(g)[x]] + ';';
+                        }
+                    }
+                    this.t.setAttribute(Object.keys(a)[i],value);
+                }
+            }
             return this;
         };
         this.apn = function(tt,i){
