@@ -1,6 +1,7 @@
 module.exports = {
-    entry: './src/index.js',
+    entry: "./src/index.js",
+    mode: "development",
     output: {
-      filename: 'dist/bundle.js'
+        filename: "bundle.js"
     }
-  };
+};
